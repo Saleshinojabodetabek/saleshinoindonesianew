@@ -412,31 +412,26 @@ if ($selectedKategori !== '') $baseUrl .= "kategori=" . urlencode($selectedKateg
     <?php if ($totalPages > 1): ?>
         <div class="pagination" aria-label="Navigasi halaman">
             <?php for ($i = 1; $i <= $totalPages; $i++): ?>
-    
                 <?php
-                    // Selalu bangun URL dari awal, jangan pakai $baseUrl
                     $params = [];
-    
+
                     if (!empty($selectedKategori)) {
                         $params['kategori'] = $selectedKategori;
                     }
-    
+
                     if ($i > 1) {
                         $params['page'] = $i;
                     }
-    
+
                     $pageUrl = "/artikel" . (!empty($params) ? "?" . http_build_query($params) : "");
                 ?>
-    
                 <a class="<?= $i === $page ? 'active' : '' ?>" href="<?= $pageUrl ?>">
                     <?= $i ?>
                 </a>
-    
             <?php endfor; ?>
         </div>
-    </section>    
     <?php endif; ?>
-
+    </section>
 
   <!-- WhatsApp Floating Widget -->
   <div id="wa-widget-container">
