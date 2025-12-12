@@ -43,7 +43,7 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
     <!-- Google Lighthouse Recommendation -->
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="canonical" href="https://dealerhinoindonesia.com/hino500" />
+    <link rel="canonical" href="https://saleshinoindonesia.com/hino500" />
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17738682772">
@@ -97,8 +97,8 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
     <!-- Open Graph -->
     <meta property="og:title" content="Hino Ranger 500 Series | Harga & Spesifikasi Terbaru 2025" />
     <meta property="og:description" content="Dapatkan informasi lengkap Hino Ranger 500 Series — truk tangguh untuk kebutuhan angkut berat dan jarak jauh." />
-    <meta property="og:image" content="https://dealerhinoindonesia.com/images/Euro 4 Hino 500.webp" />
-    <meta property="og:url" content="https://dealerhinoindonesia.com/hino500" />
+    <meta property="og:image" content="https://saleshinoindonesia.com/images/Euro 4 Hino 500.webp" />
+    <meta property="og:url" content="https://saleshinoindonesia.com/hino500" />
     <meta property="og:type" content="product.group" />
     <meta property="og:site_name" content="Dealer Hino Indonesia" />
 
@@ -107,7 +107,7 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Dealer Resmi Hino Jakarta | Harga & Promo Truk Hino Terbaru 2025" />
     <meta name="twitter:description" content="Dealer Resmi Hino Jakarta - Jual Truk Hino Dutro, Ranger, dan Bus Hino dengan harga terbaik dan promo terbaru 2025." />
-    <meta name="twitter:image" content="https://dealerhinoindonesia.com/images/Euro 4 Hino 500.webp" />
+    <meta name="twitter:image" content="https://saleshinoindonesia.com/images/Euro 4 Hino 500.webp" />
 
     <!-- Schema.org JSON-LD untuk SEO Dealer Hino -->
     <script type="application/ld+json">
@@ -115,7 +115,7 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "Dealer Hino Indonesia",
-      "url": "https://dealerhinoindonesia.com"
+      "url": "https://saleshinoindonesia.com"
     }
     </script>
     
@@ -123,12 +123,12 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
     {
       "@context": "https://schema.org",
       "@type": "AutoDealer",
-      "@id": "https://dealerhinoindonesia.com/#dealer",
+      "@id": "https://saleshinoindonesia.com/#dealer",
       "name": "Dealer Hino Indonesia",
       "alternateName": "Dealer Resmi Hino Jakarta",
-      "url": "https://dealerhinoindonesia.com/",
-      "image": "https://dealerhinoindonesia.com/images/Euro 4 Hino 500.webp",
-      "logo": "https://dealerhinoindonesia.com/favicon_512.png",
+      "url": "https://saleshinoindonesia.com/",
+      "image": "https://saleshinoindonesia.com/images/Euro 4 Hino 500.webp",
+      "logo": "https://saleshinoindonesia.com/favicon_512.png",
       "description": "Dealer Resmi Hino Jakarta Barat - Jual Truk Hino Dutro, Ranger, dan Bus Hino. Dapatkan harga terbaik, promo terbaru 2025, serta layanan kredit dan cicilan untuk seluruh Indonesia, khususnya Jabodetabek dan Jawa Barat. Hubungi Nathan Hino sekarang juga!.",
       "telephone": "+62-859-7528-7684",
       "priceRange": "$$$",
@@ -194,7 +194,7 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
     <header>
       <div class="container header-content navbar">
         <div class="header-title">
-          <a href="https://dealerhinoindonesia.id">
+          <a href="https://saleshinoindonesia.id">
             <img src="images/logo3.webp" alt="Logo Hino" loading="lazy" style="height: 60px" />
           </a>
         </div>
@@ -202,12 +202,12 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
         <div class="hamburger-menu">&#9776;</div>
 
         <nav class="nav links">
-          <a href="https://dealerhinoindonesia.com/">Home</a>
-          <a href="https://dealerhinoindonesia.com/hino300">Hino 300 Series</a>
-          <a href="https://dealerhinoindonesia.com/hino500">Hino 500 Series</a>
-          <a href="https://dealerhinoindonesia.com/hinobus">Hino Bus Series</a>
-          <a href="https://dealerhinoindonesia.com/contact">Contact</a>
-          <a href="https://dealerhinoindonesia.com/artikel">Blog & Artikel</a>
+          <a href="https://saleshinoindonesia.com/">Home</a>
+          <a href="https://saleshinoindonesia.com/hino300">Hino 300 Series</a>
+          <a href="https://saleshinoindonesia.com/hino500">Hino 500 Series</a>
+          <a href="https://saleshinoindonesia.com/hinobus">Hino Bus Series</a>
+          <a href="https://saleshinoindonesia.com/contact">Contact</a>
+          <a href="https://saleshinoindonesia.com/artikel">Blog & Artikel</a>
         </nav>
       </div>
     </header>
@@ -256,7 +256,7 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
               data.forEach(p => {
                 html += `
                   <div class="produk-card">
-                    <img src="admin/uploads/produk/${p.gambar}" alt="${p.nama_produk}">
+                    <img src="/uploads/produk/${p.gambar}" alt="${p.nama_produk}">
                     <h3>${p.nama_produk}</h3>
                     <a href="product-detail-hino500.php?slug=${p.slug}#hero-section" class="btn-detail">Lihat Detail</a>
                   </div>
@@ -311,7 +311,7 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
 
     <!-- Floating Button -->
     <div id="wa-floating-btn">
-      <img src="https://dealerhinoindonesia.com/images/wa.png" alt="wa" />
+      <img src="https://saleshinoindonesia.com/images/wa.png" alt="wa" />
       <span>WhatsApp</span>
     </div>
 
@@ -319,7 +319,7 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
     <div id="wa-chatbox">
       <div class="wa-header">
         <img 
-          src="https://dealerhinoindonesia.com/images/NT.jpeg" 
+          src="https://saleshinoindonesia.com/images/NT.jpeg" 
           class="wa-avatar" 
           alt="Sales Hino Indonesia"
         />

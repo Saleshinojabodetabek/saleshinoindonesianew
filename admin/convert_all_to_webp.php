@@ -1,6 +1,6 @@
 <?php
 // Konfigurasi
-$rootDir = __DIR__ . "/uploads";
+$rootDir = __DIR__ . "../uploads";
 $quality  = 80; // kualitas webp (0-100)
 
 // Fungsi konversi ke WebP

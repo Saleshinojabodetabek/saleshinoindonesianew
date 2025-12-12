@@ -1,6 +1,6 @@
 <?php
 $slug = isset($_GET['slug']) ? trim((string)$_GET['slug']) : '';
-$response = json_decode(file_get_contents("https://dealerhinoindonesia.com/admin/api/get_artikel.php?perPage=100"), true);
+$response = json_decode(file_get_contents("https://saleshinoindonesia.com/admin/api/get_artikel.php?perPage=100"), true);
 $data = $response['data'] ?? [];
 $artikel = null;
 
@@ -46,7 +46,7 @@ if ($slug !== '' && is_array($data)) {
       content="harga truk hino terbaru, tips memilih truk hino, perbandingan hino dutro dan ranger, review truk hino, update harga hino 2025, berita hino terbaru, artikel hino indonesia, promo hino terbaru, panduan kredit truk hino, cara memilih truk bisnis"
     />
     <meta name="author" content="Nathan Hino" />
-    <link rel="canonical" href="https://dealerhinoindonesia.com/artikel/<?= urlencode($artikel['slug'] ?? '') ?>">
+    <link rel="canonical" href="https://saleshinoindonesia.com/artikel/<?= urlencode($artikel['slug'] ?? '') ?>">
     <title><?= htmlspecialchars($artikel['judul'] ?? 'Artikel Tidak Ditemukan') ?> | Dealer Hino Indonesia</title>
 
     <!-- Google tag (gtag.js) -->
@@ -92,8 +92,8 @@ if ($slug !== '' && is_array($data)) {
     <!-- Open Graph -->
     <meta property="og:title" content="<?= htmlspecialchars($artikel['judul']) ?> | Artikel Hino" />
     <meta property="og:description" content="<?= htmlspecialchars(mb_strimwidth(strip_tags($artikel['isi']), 0, 150, '...')) ?>" />
-    <meta property="og:image" content="https://dealerhinoindonesia.com/admin/uploads/artikel/<?= $artikel['gambar'] ?>" />
-    <meta property="og:url" content="https://dealerhinoindonesia.com/artikel/<?= urlencode($artikel['slug']) ?>" />
+    <meta property="og:image" content="https://saleshinoindonesia.com/uploads/artikel/<?= $artikel['gambar'] ?>" />
+    <meta property="og:url" content="https://saleshinoindonesia.com/artikel/<?= urlencode($artikel['slug']) ?>" />
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="Dealer Hino Indonesia" />
 
@@ -105,7 +105,7 @@ if ($slug !== '' && is_array($data)) {
       name="twitter:description"
       content="Dealer Resmi Hino Jakarta - Jual Truk Hino Dutro, Ranger, dan Bus Hino dengan harga terbaik dan promo terbaru 2025."
     />
-    <meta name="twitter:image" content="https://dealerhinoindonesia.com/images/promohino1.webp" />
+    <meta name="twitter:image" content="https://saleshinoindonesia.com/images/promohino1.webp" />
 
     <!-- Schema.org JSON-LD untuk SEO Dealer Hino -->
     <script type="application/ld+json">
@@ -113,7 +113,7 @@ if ($slug !== '' && is_array($data)) {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "Dealer Hino Indonesia",
-      "url": "https://dealerhinoindonesia.com"
+      "url": "https://saleshinoindonesia.com"
     }
     </script>
     
@@ -121,12 +121,12 @@ if ($slug !== '' && is_array($data)) {
     {
       "@context": "https://schema.org",
       "@type": "AutoDealer",
-      "@id": "https://dealerhinoindonesia.com/#dealer",
+      "@id": "https://saleshinoindonesia.com/#dealer",
       "name": "Dealer Hino Indonesia",
       "alternateName": "Dealer Resmi Hino Jakarta",
-      "url": "https://dealerhinoindonesia.com/",
-      "image": "https://dealerhinoindonesia.com/images/promohino1.webp",
-      "logo": "https://dealerhinoindonesia.com/favicon_512.png",
+      "url": "https://saleshinoindonesia.com/",
+      "image": "https://saleshinoindonesia.com/images/promohino1.webp",
+      "logo": "https://saleshinoindonesia.com/favicon_512.png",
       "description": "Dealer Resmi Hino Jakarta Barat - Jual Truk Hino Dutro, Ranger, dan Bus Hino. Dapatkan harga terbaik, promo terbaru 2025, serta layanan kredit dan cicilan untuk seluruh Indonesia, khususnya Jabodetabek dan Jawa Barat. Hubungi Nathan Hino sekarang juga!.",
       "telephone": "+62-859-7528-7684",
       "priceRange": "$$$",
@@ -174,13 +174,13 @@ if ($slug !== '' && is_array($data)) {
       "@type": "Article",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://dealerhinoindonesia.com/artikel/<?= urlencode($artikel['slug']) ?>"
+        "@id": "https://saleshinoindonesia.com/artikel/<?= urlencode($artikel['slug']) ?>"
       },
       "headline": "<?= htmlspecialchars($artikel['judul']) ?>",
       "description": "<?= htmlspecialchars($meta_desc) ?>",
       "image": {
         "@type": "ImageObject",
-        "url": "https://dealerhinoindonesia.com/admin/uploads/artikel/<?= $artikel['gambar'] ?>"
+        "url": "https://saleshinoindonesia.com/uploads/artikel/<?= $artikel['gambar'] ?>"
       },
       "author": {
         "@type": "Person",
@@ -191,7 +191,7 @@ if ($slug !== '' && is_array($data)) {
         "name": "Dealer Hino Indonesia",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://dealerhinoindonesia.com/favicon_512.png"
+          "url": "https://saleshinoindonesia.com/favicon_512.png"
         }
       },
       "datePublished": "<?= date('c', strtotime($artikel['tanggal'])) ?>",
@@ -226,18 +226,18 @@ if ($slug !== '' && is_array($data)) {
     <header>
       <div class="container header-content navbar">
         <div class="header-title">
-          <a href="https://dealerhinoindonesia.com">
+          <a href="https://saleshinoindonesia.com">
             <img src="/images/logo3.webp" alt="Logo Hino Indonesia" loading="lazy" style="height: 60px" />
           </a>
         </div>
         <div class="hamburger-menu">&#9776;</div>
         <nav class="nav links">
-          <a href="https://dealerhinoindonesia.com/">Home</a>
-          <a href="https://dealerhinoindonesia.com/hino300">Hino 300 Series</a>
-          <a href="https://dealerhinoindonesia.com/hino500">Hino 500 Series</a>
-          <a href="https://dealerhinoindonesia.com/hinobus">Hino Bus Series</a>
-          <a href="https://dealerhinoindonesia.com/contact">Contact</a>
-          <a href="https://dealerhinoindonesia.com/artikel">Blog & Artikel</a>
+          <a href="https://saleshinoindonesia.com/">Home</a>
+          <a href="https://saleshinoindonesia.com/hino300">Hino 300 Series</a>
+          <a href="https://saleshinoindonesia.com/hino500">Hino 500 Series</a>
+          <a href="https://saleshinoindonesia.com/hinobus">Hino Bus Series</a>
+          <a href="https://saleshinoindonesia.com/contact">Contact</a>
+          <a href="https://saleshinoindonesia.com/artikel">Blog & Artikel</a>
         </nav>
       </div>
     </header>
@@ -310,7 +310,7 @@ if ($slug !== '' && is_array($data)) {
               if (!empty($kat)) {
         
                 // URL kategori ke halaman artikel + filter kategori
-                $kat_url = 'https://dealerhinoindonesia.com/artikel?search=&kategori=' . urlencode($kat);
+                $kat_url = 'https://saleshinoindonesia.com/artikel?search=&kategori=' . urlencode($kat);
         
                 echo '<li style="margin-bottom: 8px;">';
                 echo '<a href="' . $kat_url . '" 
@@ -368,7 +368,7 @@ if ($slug !== '' && is_array($data)) {
 
     <!-- Floating Button -->
     <div id="wa-floating-btn">
-      <img src="https://dealerhinoindonesia.com/images/wa.png" alt="wa" />
+      <img src="https://saleshinoindonesia.com/images/wa.png" alt="wa" />
       <span>WhatsApp</span>
     </div>
 
@@ -376,7 +376,7 @@ if ($slug !== '' && is_array($data)) {
     <div id="wa-chatbox">
       <div class="wa-header">
         <img 
-          src="https://dealerhinoindonesia.com/images/NT.jpeg" 
+          src="https://saleshinoindonesia.com/images/NT.jpeg" 
           class="wa-avatar" 
           alt="Sales Hino Indonesia"
         />
