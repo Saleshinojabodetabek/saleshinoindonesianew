@@ -194,7 +194,7 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
             <div class="dropdown-menu">
               <a href="/hino300">Hino 300 Series</a>
               <a href="/hino500">Hino 500 Series</a>
-              <a href="/bus">Hino Bus Series</a>
+              <a href="/hinobus">Hino Bus Series</a>
             </div>
           </div>
           <a href="https://saleshinoindonesia.com/hino500">Service</a>
