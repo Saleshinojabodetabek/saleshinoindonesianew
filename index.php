@@ -192,7 +192,7 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
 
           <!-- Dropdown Produk -->
           <div class="dropdown">
-            <button class="dropbtn">Produk ▾</button>
+            <button class="dropbtn">Produk</button>
             <div class="dropdown-content">
               <a href="https://saleshinoindonesia.com/hino300">Hino 300 Series</a>
               <a href="https://saleshinoindonesia.com/hino500">Hino 500 Series</a>
