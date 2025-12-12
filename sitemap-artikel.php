@@ -36,9 +36,9 @@ try {
     // Koneksi database (sesuaikan credential bila perlu)
     $conn = new mysqli(
         "localhost",
-        "u166903321_dealerhinoidn",
+        "u166903321_saleshinoidn",
         "NatanaelH1no0504@@",
-        "u166903321_dealerhinoidn"
+        "u166903321_saleshinoidn"
     );
     $conn->set_charset('utf8mb4');
 
