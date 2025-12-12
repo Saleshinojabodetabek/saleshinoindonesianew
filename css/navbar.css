@@ -21,6 +21,12 @@
   font-weight: 500;
 }
 
+/* cursor tangan + style seragam */
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+/* hover sama seperti link lain */
 .nav a:hover,
 .dropdown-toggle:hover,
 .nav a.active {
@@ -93,24 +99,11 @@ header {
 }
 
 /* =====================================
-   DROPDOWN (DEFAULT TERTUTUP)
+   DROPDOWN
 ===================================== */
 
 .dropdown {
   position: relative;
-}
-
-.dropdown-toggle {
-  color: #666;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 500;
-  transition: color 0.3s ease;
-  cursor: pointer;
-}
-
-.dropdown-toggle:hover {
-  color: #2e7d32;
 }
 
 .dropdown-menu {
@@ -123,9 +116,9 @@ header {
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 
-  display: none; /* TERTUTUP */
-  opacity: 0; /* TERTUTUP */
-  visibility: hidden; /* TERTUTUP */
+  display: none;
+  opacity: 0;
+  visibility: hidden;
   transform: translateY(10px);
   transition: 0.25s ease;
   z-index: 999;
@@ -145,9 +138,7 @@ header {
   color: #2e7d32;
 }
 
-/* =====================================
-   DROPDOWN SAAT OPEN
-===================================== */
+/* dropdown terbuka */
 .dropdown.open .dropdown-menu {
   display: block;
   opacity: 1;
@@ -155,9 +146,7 @@ header {
   transform: translateY(0);
 }
 
-/* =====================================
-   RESPONSIVE DROPDOWN (MOBILE)
-===================================== */
+/* MOBILE DROPDOWN */
 @media (max-width: 992px) {
   .dropdown-menu {
     position: relative;
