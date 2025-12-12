@@ -162,3 +162,24 @@ header {
     display: block !important;
   }
 }
+
+/* =====================================
+   FIX PALING KUAT — DROP HOVER TOTAL
+===================================== */
+
+/* Matikan semua hover secara global */
+.dropdown:hover .dropdown-content,
+.nav .dropdown:hover .dropdown-content,
+.header-content .dropdown:hover .dropdown-content {
+  display: none !important;
+}
+
+/* Default selalu tersembunyi */
+.dropdown-content {
+  display: none !important;
+}
+
+/* Hanya muncul saat .open (klik JS) */
+.dropdown.open .dropdown-content {
+  display: block !important;
+}
