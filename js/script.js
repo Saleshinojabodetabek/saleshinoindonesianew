@@ -15,13 +15,15 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("click", (e) => {
       if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
         navLinks.classList.remove("active");
+
+        // Tutup semua dropdown
         document.querySelectorAll(".dropdown").forEach((dd) => {
           dd.classList.remove("open");
         });
       }
     });
 
-    // Tutup menu saat klik link menu
+    // Tutup menu saat klik link
     navLinks.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
         navLinks.classList.remove("active");
@@ -30,22 +32,22 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* ==========================
-     DROPDOWN PRODUK (Desktop + Mobile)
+     DROPDOWN PRODUK (Klik bukan hover)
   ========================== */
   document.querySelectorAll(".dropdown-toggle").forEach((toggle) => {
     toggle.addEventListener("click", (e) => {
       e.preventDefault();
       e.stopPropagation();
 
-      const parent = toggle.closest(".dropdown");
+      const dropdownParent = toggle.closest(".dropdown");
 
-      // Tutup dropdown lain
+      // Tutup dropdown lain dulu
       document.querySelectorAll(".dropdown").forEach((dd) => {
-        if (dd !== parent) dd.classList.remove("open");
+        if (dd !== dropdownParent) dd.classList.remove("open");
       });
 
-      // Toggle dropdown ini
-      parent.classList.toggle("open");
+      // Buka / tutup dropdown yang diklik
+      dropdownParent.classList.toggle("open");
     });
   });
 
