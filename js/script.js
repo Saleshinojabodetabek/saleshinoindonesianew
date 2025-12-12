@@ -1,30 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // ==========================
-  // HAMBURGER MENU
-  // ==========================
+  /* ==========================
+     HAMBURGER MENU
+  ========================== */
   const hamburger = document.querySelector(".hamburger-menu");
   const navLinks = document.querySelector(".nav.links");
 
   if (hamburger && navLinks) {
-    // Toggle menu saat klik hamburger
     hamburger.addEventListener("click", (e) => {
       e.stopPropagation();
       navLinks.classList.toggle("active");
     });
 
-    // Tutup menu saat klik di luar menu
+    // Tutup menu + dropdown saat klik di luar
     document.addEventListener("click", (e) => {
       if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
         navLinks.classList.remove("active");
-
-        // Tutup dropdown saat klik di luar
         document.querySelectorAll(".dropdown").forEach((dd) => {
           dd.classList.remove("open");
         });
       }
     });
 
-    // Tutup menu saat klik salah satu link nav
+    // Tutup menu saat klik link menu
     navLinks.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
         navLinks.classList.remove("active");
@@ -32,66 +29,59 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ==========================
-  // DROPDOWN PRODUK (Mobile)
-  // ==========================
-  const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
-
-  dropdownToggles.forEach((toggle) => {
+  /* ==========================
+     DROPDOWN PRODUK (Desktop + Mobile)
+  ========================== */
+  document.querySelectorAll(".dropdown-toggle").forEach((toggle) => {
     toggle.addEventListener("click", (e) => {
-      // Hanya aktif di mobile
-      if (window.innerWidth <= 992) {
-        e.preventDefault();
-        e.stopPropagation();
+      e.preventDefault();
+      e.stopPropagation();
 
-        const parent = toggle.parentElement;
+      const parent = toggle.closest(".dropdown");
 
-        // Tutup dropdown lain
-        document.querySelectorAll(".dropdown").forEach((dd) => {
-          if (dd !== parent) dd.classList.remove("open");
-        });
+      // Tutup dropdown lain
+      document.querySelectorAll(".dropdown").forEach((dd) => {
+        if (dd !== parent) dd.classList.remove("open");
+      });
 
-        // Toggle dropdown yang diklik
-        parent.classList.toggle("open");
-      }
+      // Toggle dropdown ini
+      parent.classList.toggle("open");
     });
   });
 
-  // ==========================
-  // SLIDE BANNER
-  // ==========================
+  /* ==========================
+     SLIDE BANNER
+  ========================== */
   const slides = document.querySelectorAll(".slide");
+
   if (slides.length > 0) {
     let currentSlide = 0;
 
     const showSlide = (index) => {
-      slides.forEach((slide, i) => {
-        slide.classList.toggle("active", i === index);
-      });
+      slides.forEach((slide, i) =>
+        slide.classList.toggle("active", i === index)
+      );
     };
 
-    const nextSlide = () => {
+    setInterval(() => {
       currentSlide = (currentSlide + 1) % slides.length;
       showSlide(currentSlide);
-    };
-
-    setInterval(nextSlide, 4000);
+    }, 4000);
   }
 
-  // ==========================
-  // SMOOTH SCROLL
-  // ==========================
+  /* ==========================
+     SMOOTH SCROLL
+  ========================== */
   document.querySelectorAll('nav a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", (e) => {
       e.preventDefault();
+
       const targetID = anchor.getAttribute("href").substring(1);
       const target = document.getElementById(targetID);
 
       if (target) {
-        const headerOffset = 130;
-        const elementPosition = target.getBoundingClientRect().top;
         const offsetPosition =
-          elementPosition + window.pageYOffset - headerOffset;
+          target.getBoundingClientRect().top + window.pageYOffset - 130;
 
         window.scrollTo({
           top: offsetPosition,
@@ -101,23 +91,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // ==========================
-  // FADE IN / FADE OUT ON SCROLL
-  // ==========================
+  /* ==========================
+     FADE IN EFFECT
+  ========================== */
   const faders = document.querySelectorAll(".fade-element");
-  const observerOptions = {
-    threshold: 0.1,
-  };
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      } else {
-        entry.target.classList.remove("visible");
-      }
-    });
-  }, observerOptions);
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle("visible", entry.isIntersecting);
+      });
+    },
+    { threshold: 0.1 }
+  );
 
   faders.forEach((el) => observer.observe(el));
 });

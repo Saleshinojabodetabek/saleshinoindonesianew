@@ -185,18 +185,23 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
             <img src="images/logo3.webp" alt="Logo Hino" loading="lazy" style="height: 60px" />
           </a>
         </div>
+
         <div class="hamburger-menu">&#9776;</div>
+
         <nav class="nav links">
           <a href="https://saleshinoindonesia.com/">Home</a>
           <a href="https://saleshinoindonesia.com/showroom">Tentang Kami</a>
+
+          <!-- FIXED DROPDOWN -->
           <div class="dropdown">
-            <a href="#" class="nav-link dropdown-toggle">Produk</a>
+            <button class="dropdown-toggle">Produk</button>
             <div class="dropdown-content">
               <a href="https://saleshinoindonesia.com/hino300">Hino 300 Series</a>
               <a href="https://saleshinoindonesia.com/hino500">Hino 500 Series</a>
               <a href="https://saleshinoindonesia.com/hino-bus">Hino Bus Series</a>
             </div>
           </div>
+
           <a href="https://saleshinoindonesia.com/hino500">Service</a>
           <a href="https://saleshinoindonesia.com/contact">Contact</a>
           <a href="https://saleshinoindonesia.com/artikel">Blog & Artikel</a>
