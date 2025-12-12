@@ -92,27 +92,37 @@ header {
   color: #1e3a8a;
 }
 
-/* =====================================
-   DROPDOWN MENU (fix final)
-===================================== */
+/* ============================
+   DROPDOWN MENU — FIX TOTAL
+============================ */
 
 /* Container dropdown */
 .dropdown {
   position: relative;
 }
 
-/* Tombol Produk (seragam dengan nav link) */
+/* Tombol Produk */
 .dropdown-toggle {
   background: none;
   border: none;
   cursor: pointer;
   text-align: left;
   padding: 0;
+  color: #666;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 
-/* Default: dropdown disembunyikan TOTAL */
+/* Tutup hover warna jika perlu */
+.dropdown-toggle:hover {
+  color: #2e7d32;
+}
+
+/* Kontainer dropdown */
 .dropdown-content {
-  display: none !important;
+  display: none; /* Default hidden */
   position: absolute;
   top: 40px;
   left: 0;
@@ -138,18 +148,18 @@ header {
   color: #2e7d32;
 }
 
-/* === DESKTOP: Hilangkan hover sepenuhnya === */
+/* ============================
+   MATIKAN HOVER (DESKTOP)
+============================ */
 @media (min-width: 993px) {
   .dropdown:hover .dropdown-content {
-    display: none !important; /* Paksa hover mati */
-  }
-
-  .dropdown.open .dropdown-content {
-    display: block !important; /* Tampil hanya jika .open */
+    display: none !important; /* Hilangkan hover total */
   }
 }
 
-/* === MOBILE === */
+/* ============================
+   MOBILE STYLE
+============================ */
 @media (max-width: 992px) {
   .dropdown-content {
     position: static;
@@ -157,29 +167,11 @@ header {
     border: none;
     padding-left: 20px;
   }
-
-  .dropdown.open .dropdown-content {
-    display: block !important;
-  }
 }
 
-/* =====================================
-   FIX PALING KUAT — DROP HOVER TOTAL
-===================================== */
-
-/* Matikan semua hover secara global */
-.dropdown:hover .dropdown-content,
-.nav .dropdown:hover .dropdown-content,
-.header-content .dropdown:hover .dropdown-content {
-  display: none !important;
-}
-
-/* Default selalu tersembunyi */
-.dropdown-content {
-  display: none !important;
-}
-
-/* Hanya muncul saat .open (klik JS) */
+/* ============================
+   STATE SAH — OPEN
+============================ */
 .dropdown.open .dropdown-content {
-  display: block !important;
+  display: block !important; /* HANYA tampil saat open */
 }
