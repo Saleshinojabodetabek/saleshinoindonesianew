@@ -92,21 +92,20 @@ header {
   color: #1e3a8a;
 }
 
-/* ============================
-   DROPDOWN MENU — FIX TOTAL
-============================ */
+/* =====================================
+   DROPDOWN MENU — FIX FINAL TOTAL
+===================================== */
 
 /* Container dropdown */
 .dropdown {
   position: relative;
 }
 
-/* Tombol Produk */
+/* Item Produk */
 .dropdown-toggle {
   background: none;
   border: none;
   cursor: pointer;
-  text-align: left;
   padding: 0;
   color: #666;
   font-size: 16px;
@@ -115,14 +114,9 @@ header {
   transition: color 0.3s ease;
 }
 
-/* Tutup hover warna jika perlu */
-.dropdown-toggle:hover {
-  color: #2e7d32;
-}
-
-/* Kontainer dropdown */
+/* == DROPDOWN CONTENT == */
 .dropdown-content {
-  display: none; /* Default hidden */
+  display: none !important; /* default: hidden */
   position: absolute;
   top: 40px;
   left: 0;
@@ -135,12 +129,11 @@ header {
   z-index: 200;
 }
 
-/* Link dalam dropdown */
+/* Link dropdown */
 .dropdown-content a {
   display: block;
   padding: 10px 20px;
   color: #444;
-  text-transform: none;
 }
 
 .dropdown-content a:hover {
@@ -149,16 +142,17 @@ header {
 }
 
 /* ============================
-   MATIKAN HOVER (DESKTOP)
+   MATIKAN HOVER SEPENUHNYA
 ============================ */
-@media (min-width: 993px) {
-  .dropdown:hover .dropdown-content {
-    display: none !important; /* Hilangkan hover total */
-  }
+.dropdown:hover .dropdown-content {
+  display: none !important;
+}
+.nav .dropdown:hover .dropdown-content {
+  display: none !important;
 }
 
 /* ============================
-   MOBILE STYLE
+   MOBILE MODE
 ============================ */
 @media (max-width: 992px) {
   .dropdown-content {
@@ -170,8 +164,8 @@ header {
 }
 
 /* ============================
-   STATE SAH — OPEN
+   OPEN = tampil (klik JS)
 ============================ */
 .dropdown.open .dropdown-content {
-  display: block !important; /* HANYA tampil saat open */
+  display: block !important;
 }
