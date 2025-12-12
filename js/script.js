@@ -11,19 +11,16 @@ document.addEventListener("DOMContentLoaded", () => {
       navLinks.classList.toggle("active");
     });
 
-    // Tutup menu + dropdown saat klik di luar
     document.addEventListener("click", (e) => {
       if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
         navLinks.classList.remove("active");
 
-        // Tutup semua dropdown
         document.querySelectorAll(".dropdown").forEach((dd) => {
           dd.classList.remove("open");
         });
       }
     });
 
-    // Tutup menu saat klik link
     navLinks.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
         navLinks.classList.remove("active");
@@ -32,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* ==========================
-     DROPDOWN PRODUK (Klik bukan hover)
+     DROPDOWN PRODUK (CLICK ONLY)
   ========================== */
   document.querySelectorAll(".dropdown-toggle").forEach((toggle) => {
     toggle.addEventListener("click", (e) => {
@@ -41,18 +38,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const dropdownParent = toggle.closest(".dropdown");
 
-      // Tutup dropdown lain dulu
       document.querySelectorAll(".dropdown").forEach((dd) => {
         if (dd !== dropdownParent) dd.classList.remove("open");
       });
 
-      // Buka / tutup dropdown yang diklik
       dropdownParent.classList.toggle("open");
     });
   });
 
   /* ==========================
-     SLIDE BANNER
+     SLIDER AUTO
   ========================== */
   const slides = document.querySelectorAll(".slide");
 
@@ -94,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* ==========================
-     FADE IN EFFECT
+     FADE IN ON SCROLL
   ========================== */
   const faders = document.querySelectorAll(".fade-element");
 
