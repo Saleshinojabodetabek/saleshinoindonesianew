@@ -93,7 +93,7 @@ header {
 }
 
 /* =====================================
-   DROPDOWN MENU (baru, seragam dengan navbar)
+   DROPDOWN MENU (fix final)
 ===================================== */
 
 /* Container dropdown */
@@ -101,7 +101,7 @@ header {
   position: relative;
 }
 
-/* Link “Produk” harus IDENTIK seperti link lainnya */
+/* Tombol Produk (seragam dengan nav link) */
 .dropdown-toggle {
   background: none;
   border: none;
@@ -110,9 +110,9 @@ header {
   padding: 0;
 }
 
-/* Dropdown content */
+/* Default: dropdown disembunyikan TOTAL */
 .dropdown-content {
-  display: none;
+  display: none !important;
   position: absolute;
   top: 40px;
   left: 0;
@@ -125,7 +125,7 @@ header {
   z-index: 200;
 }
 
-/* Submenu link */
+/* Link dalam dropdown */
 .dropdown-content a {
   display: block;
   padding: 10px 20px;
@@ -138,17 +138,18 @@ header {
   color: #2e7d32;
 }
 
-/* DESKTOP hover */
+/* === DESKTOP: Hilangkan hover sepenuhnya === */
 @media (min-width: 993px) {
   .dropdown:hover .dropdown-content {
-    display: none !important;
+    display: none !important; /* Paksa hover mati */
   }
+
   .dropdown.open .dropdown-content {
-    display: block !important;
+    display: block !important; /* Tampil hanya jika .open */
   }
 }
 
-/* MOBILE: dropdown dibuka melalui JS (class .open) */
+/* === MOBILE === */
 @media (max-width: 992px) {
   .dropdown-content {
     position: static;
@@ -160,21 +161,4 @@ header {
   .dropdown.open .dropdown-content {
     display: block !important;
   }
-}
-
-/* =====================================
-   BUTTON UMUM (original)
-===================================== */
-.btn {
-  background-color: #2e7d32;
-  color: #fff;
-  padding: 10px 24px;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-  margin-top: 24px;
-}
-
-.btn:hover {
-  background-color: #27682a;
 }
