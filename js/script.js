@@ -35,21 +35,25 @@ document.addEventListener("DOMContentLoaded", () => {
   // ==========================
   // DROPDOWN PRODUK (Mobile)
   // ==========================
-  const dropdownButtons = document.querySelectorAll(".dropbtn");
+  const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
 
-  dropdownButtons.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      e.preventDefault();
-      e.stopPropagation();
+  dropdownToggles.forEach((toggle) => {
+    toggle.addEventListener("click", (e) => {
+      // Hanya aktif di mobile
+      if (window.innerWidth <= 992) {
+        e.preventDefault();
+        e.stopPropagation();
 
-      const parent = btn.parentElement;
+        const parent = toggle.parentElement;
 
-      // Tutup dropdown lain
-      document.querySelectorAll(".dropdown").forEach((dd) => {
-        if (dd !== parent) dd.classList.remove("open");
-      });
+        // Tutup dropdown lain
+        document.querySelectorAll(".dropdown").forEach((dd) => {
+          if (dd !== parent) dd.classList.remove("open");
+        });
 
-      parent.classList.toggle("open");
+        // Toggle dropdown yang diklik
+        parent.classList.toggle("open");
+      }
     });
   });
 
