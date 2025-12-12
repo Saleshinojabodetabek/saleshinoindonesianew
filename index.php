@@ -189,9 +189,18 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
         <nav class="nav links">
           <a href="https://saleshinoindonesia.com/">Home</a>
           <a href="https://saleshinoindonesia.com/showroom">Tentang Kami</a>
-          <a href="https://saleshinoindonesia.com/hino300">Hino 300 Series</a>
-          <a href="https://saleshinoindonesia.com/hino500">Hino 500 Series</a>
-          <a href="https://saleshinoindonesia.com/hinobus">Hino Bus Series</a>
+
+          <!-- Dropdown Produk -->
+          <div class="dropdown">
+            <button class="dropbtn">Produk ▾</button>
+            <div class="dropdown-content">
+              <a href="https://saleshinoindonesia.com/hino300">Hino 300 Series</a>
+              <a href="https://saleshinoindonesia.com/hino500">Hino 500 Series</a>
+              <a href="https://saleshinoindonesia.com/hino-bus">Hino Bus Series</a>
+            </div>
+          </div>
+
+          <a href="https://saleshinoindonesia.com/hino500">Service</a>
           <a href="https://saleshinoindonesia.com/contact">Contact</a>
           <a href="https://saleshinoindonesia.com/artikel">Blog & Artikel</a>
         </nav>

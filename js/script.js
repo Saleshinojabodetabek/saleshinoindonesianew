@@ -12,10 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
       navLinks.classList.toggle("active");
     });
 
-    // Tutup menu saat klik di luar menu atau hamburger
+    // Tutup menu saat klik di luar menu
     document.addEventListener("click", (e) => {
       if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
         navLinks.classList.remove("active");
+
+        // Tutup dropdown saat klik di luar
+        document.querySelectorAll(".dropdown").forEach((dd) => {
+          dd.classList.remove("open");
+        });
       }
     });
 
@@ -26,6 +31,27 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  // ==========================
+  // DROPDOWN PRODUK (Mobile)
+  // ==========================
+  const dropdownButtons = document.querySelectorAll(".dropbtn");
+
+  dropdownButtons.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const parent = btn.parentElement;
+
+      // Tutup dropdown lain
+      document.querySelectorAll(".dropdown").forEach((dd) => {
+        if (dd !== parent) dd.classList.remove("open");
+      });
+
+      parent.classList.toggle("open");
+    });
+  });
 
   // ==========================
   // SLIDE BANNER
@@ -76,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ==========================
   const faders = document.querySelectorAll(".fade-element");
   const observerOptions = {
-    threshold: 0.1, // minimal 10% terlihat
+    threshold: 0.1,
   };
 
   const observer = new IntersectionObserver((entries) => {
