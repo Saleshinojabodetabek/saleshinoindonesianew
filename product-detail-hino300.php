@@ -245,12 +245,19 @@ while ($row = $res_spec->fetch_assoc()) {
         </div>
         <div class="hamburger-menu">&#9776;</div>
         <nav class="nav links">
-          <a href="/">Home</a>
-          <a href="hino300">Hino 300 Series</a>
-          <a href="hino500">Hino 500 Series</a>
-          <a href="hinobus">Hino Bus Series</a>
-          <a href="contact">Contact</a>
-          <a href="artikel">Blog & Artikel</a>
+          <a href="https://saleshinoindonesia.com/">Home</a>
+          <a href="https://saleshinoindonesia.com/showroom">Tentang Kami</a>
+          <div class="dropdown">
+            <span class="dropdown-toggle">Produk</span>
+            <div class="dropdown-menu">
+              <a href="/hino300">Hino 300 Series</a>
+              <a href="/hino500">Hino 500 Series</a>
+              <a href="/hinobus">Hino Bus Series</a>
+            </div>
+          </div>
+          <a href="https://saleshinoindonesia.com/hino500">Service</a>
+          <a href="https://saleshinoindonesia.com/contact">Contact</a>
+          <a href="https://saleshinoindonesia.com/artikel">Blog & Artikel</a>
         </nav>
       </div>
     </header>
