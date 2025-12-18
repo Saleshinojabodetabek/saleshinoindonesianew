@@ -14,7 +14,7 @@
 
 .wrapper h2 {
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .wrapper p {
@@ -42,7 +42,7 @@
 /* Label */
 .wrapper label {
   display: block;
-  margin-top: 16px;
+  margin-top: 15px;
   font-weight: bold;
 }
 
@@ -51,14 +51,13 @@
 .wrapper select,
 .wrapper textarea {
   width: 100%;
-  padding: 12px 14px;
+  padding: 12px;
   margin-top: 6px;
   border: 1.5px solid #999;
   border-radius: 6px;
   box-sizing: border-box;
   font-size: 14px;
   font-family: inherit;
-  background-color: #fff;
 }
 
 /* Fokus */
@@ -67,31 +66,13 @@
 .wrapper textarea:focus {
   outline: none;
   border-color: #b8860b;
-  box-shadow: 0 0 0 2px rgba(184, 134, 11, 0.15);
-}
-
-/* Hilangkan panah kecil number input (Chrome) */
-.wrapper input[type="number"]::-webkit-inner-spin-button,
-.wrapper input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-.wrapper input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-/* Placeholder */
-.wrapper input::placeholder {
-  color: #999;
 }
 
 /* Button */
 .wrapper button {
   width: 100%;
-  margin-top: 28px;
-  padding: 14px;
+  margin-top: 25px;
+  padding: 12px;
   background-color: #ffd700;
   border: none;
   color: #000;
@@ -99,12 +80,11 @@
   font-weight: bold;
   border-radius: 6px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .wrapper button:hover {
   background-color: #b8860b;
-  color: #fff;
 }
 
 /* Responsive */
