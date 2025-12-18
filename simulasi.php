@@ -213,7 +213,7 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
 
         <!-- Gambar -->
         <div class="hero-contact-image">
-          <img src="images/simulasi.png" alt="Customer Service Hino" />
+          <img src="images/simulasi1.png" alt="Customer Service Hino" />
         </div>
       </div>
     </section>
