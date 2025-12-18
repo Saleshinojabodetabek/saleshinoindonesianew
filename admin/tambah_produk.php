@@ -118,7 +118,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <a href="index.php">Dashboard</a>
   <a href="artikel.php">Artikel</a>
   <a href="produk.php" class="active">Produk</a>
-  <a href="pesan.php">Pesan Customer</a>
+  <a href="pesan.php">Pesan</a>
+  <a href="simulasikredit.php">Simulasi Kredit</a>
+  <a href="ubah_password.php">Ganti Pasword</a>
   <a href="logout.php">Logout</a>
 </div>
 
