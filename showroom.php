@@ -236,14 +236,14 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
             </div>
           </div>
         </section>
-    <main>
+    
       <!-- Kontak -->
       <section id="contact" class="contact fade-element">
         <h2>Butuh Bantuan atau Info Harga?</h2>
         <p>Hubungi Nathan langsung via WhatsApp. Nathan siap membantu Anda memilih truk terbaik.</p>
         <a href="https://wa.me/6285975287684" class="whatsapp-link" target="_blank" rel="noopener noreferrer">Chat WhatsApp Sekarang</a>
       </section>
-
+    </main>
 
     <!-- WhatsApp Floating Widget -->
     <div id="wa-widget-container">
