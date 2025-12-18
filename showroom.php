@@ -236,18 +236,6 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
             </div>
           </div>
         </section>
-
-          <div class="sh-video-wrapper">
-            <iframe
-              src="https://www.youtube.com/embed/IUhKBJOcVus"
-              title="Video Dealer Hino Indonesia"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
-          </div>
-        </div>
-      </section>
       
       <!-- Fitur -->
       <section id="features" class="features fade-element">
