@@ -221,7 +221,7 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
     <!-- Simulasi Section -->
     <div class="wrapper" id="contact-form">
       <h2>Simulasi Kredit</h2>
-      <p>Fill out the form below to get in touch with us.</p>
+      <p>Jika Anda sudah menentukan jenis dan tipe mobil yang Anda inginkan, silakan isi form berikut dengan data yang benar. Kami akan segera merespon pesan Anda dalam waktu maksimal 1 x 24 jam.</p>
 
       <div class="container">
         <div class="contact-form">
