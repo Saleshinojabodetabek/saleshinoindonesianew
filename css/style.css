@@ -53,10 +53,10 @@ main > section {
 }
 
 .video-title {
-  font-size: 28px;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 30px;
-  color: #222;
+  margin-bottom: 2rem;
+  color: #2e7d32;
 }
 
 /* Wrapper agar video responsif */
