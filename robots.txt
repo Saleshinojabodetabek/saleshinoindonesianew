@@ -1,39 +1,18 @@
-# =========================================================
-# robots.txt for saleshinoindonesia.com
-# FINAL CLEAN & OPTIMIZED
-# =========================================================
+# =================================================
+# robots.txt - saleshinoindonesia.com
+# SEO SAFE & GOOGLE FRIENDLY
+# =================================================
 
 User-agent: *
-
-# --- ALLOW: Static files ---
-Allow: /css/
-Allow: /js/
-Allow: /images/
-Allow: /admin/uploads/
-Allow: /favicon.png
-Allow: /favicon.ico
-
-# --- BLOCK: Sensitive directories ---
 Disallow: /admin/
 
-# --- ALLOW important public PHP pages ---
-Allow: /index.php$
-Allow: /artikel.php$
-Allow: /detail_artikel.php$
-Allow: /hino300.php$
-Allow: /hino500.php$
-Allow: /hinobus.php$
-Allow: /product-detail-hino300.php$
-Allow: /product-detail-hino500.php$
-Allow: /product-detail-hinobus.php$
-Allow: /contact.php$
 
-# --- Sitemap ---
+# Sitemap
 Sitemap: https://saleshinoindonesia.com/sitemap-index.xml
 Sitemap: https://saleshinoindonesia.com/sitemap-pages.xml
 Sitemap: https://saleshinoindonesia.com/sitemap-produk.xml
-Sitemap: https://saleshinoindonesia.com/sitemap-artikel.php
+Sitemap: https://saleshinoindonesia.com/sitemap-artikel.xml
 
-# =========================================================
-# END OF FILE
-# =========================================================
+# =================================================
+# END
+# =================================================
