@@ -236,28 +236,6 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
             </div>
           </div>
         </section>
-      
-      <!-- Fitur -->
-      <section id="features" class="features fade-element">
-        <h2 class="section-title">Kenapa Pilih Hino?</h2>
-        <div class="feature-list">
-          <div class="feature">
-            <div class="icon">🛻</div>
-            <h3>Durabilitas Tinggi</h3>
-            <p>Mesin dan bodi tahan lama untuk penggunaan berat sehari-hari.</p>
-          </div>
-          <div class="feature">
-            <div class="icon">👥</div>
-            <h3>Pelatihan & Konsultasi</h3>
-            <p>Kami siap memberikan pelatihan dan konsultasi sesuai kebutuhan bisnis Anda.</p>
-          </div>
-          <div class="feature">
-            <div class="icon">🔧</div>
-            <h3>Servis dan Support</h3>
-            <p>Jaringan servis luas dan suku cadang tersedia di seluruh Indonesia.</p>
-          </div>
-        </div>
-      </section>
 
       <!-- Kontak -->
       <section id="contact" class="contact fade-element">
