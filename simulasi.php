@@ -204,9 +204,9 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
       <div class="hero-contact-content">
         <!-- Teks -->
         <div class="hero-contact-text">
-          <h1>Kontak Kami</h1>
+          <h1>Simulasi Kredit</h1>
           <p>
-            Kami siap membantu Anda mendapatkan solusi terbaik untuk kebutuhan truk Hino di seluruh Indonesia.
+            Hitung estimasi cicilan truk Hino dengan mudah dan transparan. Sesuaikan tenor serta uang muka sesuai kebutuhan bisnis Anda.
           </p>
           <a href="#contact-form" class="btn-contact">Kirim Pesan</a>
         </div>
@@ -218,9 +218,9 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
       </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Simulasi Section -->
     <div class="wrapper" id="contact-form">
-      <h2>Contact Us</h2>
+      <h2>Simulasi Kredit</h2>
       <p>Fill out the form below to get in touch with us.</p>
 
       <div class="container">
