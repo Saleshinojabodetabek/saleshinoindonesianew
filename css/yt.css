@@ -18,10 +18,10 @@
 }
 
 .sh-video-header h2 {
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 700;
-  color: #111;
-  margin-bottom: 12px;
+  color: #2e7d32;
+  margin-bottom: 2rem;
   position: relative;
 }
 
