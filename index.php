@@ -259,25 +259,27 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
       </section>
 
       <!-- Youtube -->
-       <section class="video-section">
-        <div class="video-container">
-          <h2 class="video-title">
-            Hino New Series 300 136 MDLR
-          </h2>
+       <section class="sh-video-section">
+        <div class="sh-container">
+          <div class="sh-video-header">
+            <h2>Hino New Series 300 136 MDLR</h2>
+            <p>
+              Saksikan langsung informasi produk, layanan, dan keunggulan
+              kendaraan niaga Hino untuk kebutuhan bisnis Anda.
+            </p>
+          </div>
 
-          <div class="video-wrapper">
+          <div class="sh-video-wrapper">
             <iframe
               src="https://www.youtube.com/embed/IUhKBJOcVus"
-              title="YouTube video player"
+              title="Video Dealer Hino Indonesia"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen>
             </iframe>
           </div>
         </div>
       </section>
-
-
       
       <!-- Section: Promo Utama -->
       <section id="promo-utama" class="promo-section fade-element">
