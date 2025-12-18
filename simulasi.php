@@ -229,7 +229,7 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
 
     <div class="container">
         <div class="simulasi-form">
-        <form id="simulasiForm" method="POST" action="admin/simpan_kontak.php">
+        <form id="simulasiForm" method="POST" action="admin/simulasi_kredit.php">
 
             <label for="name">Nama:</label>
             <input type="text" id="name" name="name" required />
