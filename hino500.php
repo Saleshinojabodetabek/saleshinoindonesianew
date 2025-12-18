@@ -6,21 +6,6 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <!-- Google Tag Manager -->
-    <script>
-      (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-P7TN9DJW');
-    </script>
-    <!-- End Google Tag Manager -->
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Hino 500 Series (Ranger) – Dapatkan harga terbaru, spesifikasi lengkap, promo 2025, serta kredit dan cicilan ringan. Hubungi Nathan Hino: 0859-7528-7684." />
@@ -29,7 +14,7 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
       content="harga hino ranger 500 series, hino 500 series, hino dump truck, hino euro 4 terbaru, harga truk hino jabodetabek, spesifikasi hino ranger, brosur hino ranger, hino chassis 500 series"
     />
     <meta name="author" content="Nathan Hino" />
-    <title>Hino 500 Series | Harga & Promo Hino Terbaru 2025</title>
+    <title>Hino 500 Series | Harga & Promo Hino Tangerang</title>
 
     <!-- Favicon untuk semua browser modern -->
     <link rel="icon" type="image/png" sizes="512x512" href="/favicon_512.png">
@@ -44,17 +29,6 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
     <meta name="theme-color" content="#ffffff">
 
     <link rel="canonical" href="https://saleshinoindonesia.com/hino500" />
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17738682772">
-    </script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'AW-17738682772');
-    </script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
@@ -95,7 +69,7 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
     </style>
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Hino Ranger 500 Series | Harga & Spesifikasi Terbaru 2025" />
+    <meta property="og:title" content="Hino Ranger 500 Series | Harga & Spesifikasi Terbaru" />
     <meta property="og:description" content="Dapatkan informasi lengkap Hino Ranger 500 Series — truk tangguh untuk kebutuhan angkut berat dan jarak jauh." />
     <meta property="og:image" content="https://saleshinoindonesia.com/images/Euro 4 Hino 500.webp" />
     <meta property="og:url" content="https://saleshinoindonesia.com/hino500" />
@@ -105,76 +79,9 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Dealer Resmi Hino Jakarta | Harga & Promo Truk Hino Terbaru 2025" />
+    <meta name="twitter:title" content="Dealer Resmi Hino Jakarta | Harga & Promo Truk Hino Terbaru" />
     <meta name="twitter:description" content="Dealer Resmi Hino Jakarta - Jual Truk Hino Dutro, Ranger, dan Bus Hino dengan harga terbaik dan promo terbaru 2025." />
     <meta name="twitter:image" content="https://saleshinoindonesia.com/images/Euro 4 Hino 500.webp" />
-
-    <!-- Schema.org JSON-LD untuk SEO Dealer Hino -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Dealer Hino Indonesia",
-      "url": "https://saleshinoindonesia.com"
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AutoDealer",
-      "@id": "https://saleshinoindonesia.com/#dealer",
-      "name": "Dealer Hino Indonesia",
-      "alternateName": "Dealer Resmi Hino Jakarta",
-      "url": "https://saleshinoindonesia.com/",
-      "image": "https://saleshinoindonesia.com/images/Euro 4 Hino 500.webp",
-      "logo": "https://saleshinoindonesia.com/favicon_512.png",
-      "description": "Dealer Resmi Hino Jakarta Barat - Jual Truk Hino Dutro, Ranger, dan Bus Hino. Dapatkan harga terbaik, promo terbaru 2025, serta layanan kredit dan cicilan untuk seluruh Indonesia, khususnya Jabodetabek dan Jawa Barat. Hubungi Nathan Hino sekarang juga!.",
-      "telephone": "+62-859-7528-7684",
-      "priceRange": "$$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Jl. Tj. Pura.9-10, RT.2/RW.2, Pegadungan, Kec. Kalideres",
-        "addressLocality": "Jakarta Barat",
-        "addressRegion": "DKI Jakarta",
-        "postalCode": "11830",
-        "addressCountry": "ID"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -6.1567,
-        "longitude": 106.6901
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          "opens": "08:00",
-          "closes": "17:00"
-        }
-      ],
-      "sameAs": [
-        "https://www.facebook.com/profile.php?id=61573843992250",
-        "https://www.instagram.com/saleshinojabodetabek",
-        "https://www.tiktok.com/@saleshinoindonesia"
-      ]
-    }
-    </script>
-    
-    <!-- Event snippet for Pembelian conversion page -->
-    <script>
-    gtag('event', 'conversion', {
-        'send_to': 'AW-17738682772/7zEXCMGP3sIbEJSju4pC',
-        'transaction_id': ''
-    });
-    </script>
 
   </head>
 

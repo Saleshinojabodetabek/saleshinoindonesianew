@@ -63,33 +63,18 @@ while ($row = $res_spec->fetch_assoc()) {
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <!-- Google Tag Manager -->
-    <script>
-      (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-P7TN9DJW');
-    </script>
-    <!-- End Google Tag Manager -->
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Dealer Resmi Hino Indonesia - Jual Hino Dutro, Ranger, dan Bus Hino. Dapatkan harga terbaik, promo terbaru 2025, serta layanan kredit dan cicilan untuk seluruh Indonesia, khususnya Jabodetabek dan Jawa Barat. Hubungi Nathan Hino sekarang juga! 0859-7528-7684"
+      content="Dealer Resmi Hino Tangerang - Jual Hino Dutro, Ranger, dan Bus Hino. Dapatkan harga terbaik, promo terbaru 2025, serta layanan kredit dan cicilan untuk seluruh Indonesia, khususnya Jabodetabek dan Jawa Barat. Hubungi Nathan Hino sekarang juga! 0859-7528-7684"
     />
     <meta
       name="keywords"
       content="harga hino dutro terbaru, hino dutro series, hino 300 series, harga hino chassis, truk hino angkut barang, truk hino untuk bisnis, truk hino termurah, brosur truk hino, spesifikasi truk hino, truk hino euro 4"
     />
     <meta name="author" content="Nathan Hino" />
-    <title><?= htmlspecialchars($produk['nama_produk']) ?> | Dealer Hino Indonesia</title>
+    <title><?= htmlspecialchars($produk['nama_produk']) ?> | Sales Hino Indonesia</title>
 
     <!-- Favicon untuk semua browser modern -->
     <link rel="icon" type="image/png" sizes="512x512" href="/favicon_512.png">
@@ -104,17 +89,6 @@ while ($row = $res_spec->fetch_assoc()) {
     <meta name="theme-color" content="#ffffff">
 
     <link rel="canonical" href="https://saleshinoindonesia.com/hino300" />
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17738682772">
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'AW-17738682772');
-  </script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
@@ -161,13 +135,13 @@ while ($row = $res_spec->fetch_assoc()) {
     <meta property="og:image" content="https://saleshinoindonesia.com/uploads/produk<?= $produk['gambar'] ?>" />
     <meta property="og:url" content="https://saleshinoindonesia.com/product-detail-hino300?slug=<?= $produk['slug'] ?>" />
     <meta property="og:type" content="product" />
-    <meta property="og:site_name" content="Dealer Hino Indonesia" />
+    <meta property="og:site_name" content="Sales Hino Indonesia" />
 
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Dealer Resmi Hino Jakarta | Harga & Promo Hino Terbaru 2025" />
-    <meta name="twitter:description" content="Dealer Resmi Hino Jakarta - Jual Hino Dutro, Ranger, dan Bus Hino dengan harga terbaik dan promo terbaru 2025." />
+    <meta name="twitter:title" content="Dealer Resmi Hino Tangerang | Harga & Promo Hino Terbaru 2025" />
+    <meta name="twitter:description" content="Dealer Resmi Hino Tangerang - Jual Hino Dutro, Ranger, dan Bus Hino dengan harga terbaik dan promo terbaru 2025." />
     <meta name="twitter:image" content="https://saleshinoindonesia.com/images/Euro 4 Hino 300.webp" />
 
 
@@ -175,7 +149,7 @@ while ($row = $res_spec->fetch_assoc()) {
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Dealer Hino Indonesia",
+      "name": "Sales Hino Indonesia",
       "url": "https://saleshinoindonesia.com"
     }
     </script>
@@ -184,7 +158,7 @@ while ($row = $res_spec->fetch_assoc()) {
     {
       "@context": "https://schema.org",
       "@type": "AutoDealer",
-      "name": "Dealer Hino Indonesia",
+      "name": "Sales Hino Indonesia",
       "image": "https://saleshinoindonesia.com/images/Euro 4 Hino 300.webp",
       "@id": "https://saleshinoindonesia.com/",
       "url": "https://saleshinoindonesia.com/",
@@ -216,25 +190,9 @@ while ($row = $res_spec->fetch_assoc()) {
       ]
     }
     </script>
-
-    <!-- Event snippet for Pembelian conversion page -->
-    <script>
-    gtag('event', 'conversion', {
-        'send_to': 'AW-17738682772/7zEXCMGP3sIbEJSju4pC',
-        'transaction_id': ''
-    });
-    </script>
-
   </head>
 
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7TN9DJW"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <!-- Header -->
     <header>
       <div class="container header-content navbar">

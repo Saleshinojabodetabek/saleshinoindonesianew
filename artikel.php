@@ -33,20 +33,6 @@ if ($selectedKategori !== '') $baseUrl .= "kategori=" . urlencode($selectedKateg
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <!-- Google Tag Manager -->
-    <script>
-      (function(w,d,s,l,i){
-        w[l]=w[l]||[];
-        w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
-        var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
-        j.async=true;
-        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-        f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-P7TN9DJW');
-    </script>
-    <!-- End Google Tag Manager -->
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <?php
@@ -85,36 +71,25 @@ if ($selectedKategori !== '') $baseUrl .= "kategori=" . urlencode($selectedKateg
     <!--Title-->
     <?php
     if ($page > 1) {
-        echo "<title>Artikel Hino Terbaru - Halaman $page | Dealer Hino Indonesia</title>";
+        echo "<title>Artikel Hino Terbaru - Halaman $page | Sales Hino Indonesia</title>";
     } 
     elseif (!empty($selectedKategori)) {
     
         if (strtolower($selectedKategori) == 'berita') {
-            echo "<title>Berita Terbaru Truk Hino | Dealer Hino Indonesia</title>";
+            echo "<title>Berita Terbaru Truk Hino | Sales Hino Indonesia</title>";
         } 
         elseif (strtolower($selectedKategori) == 'promo') {
-            echo "<title>Promo Hino Terbaru | Dealer Hino Indonesia</title>";
+            echo "<title>Promo Hino Terbaru | Sales Hino Indonesia</title>";
         } 
         else {
-            echo "<title>Artikel Hino Kategori $selectedKategori | Dealer Hino Indonesia</title>";
+            echo "<title>Artikel Hino Kategori $selectedKategori | Sales Hino Indonesia</title>";
         }
     
     } 
     else {
-        echo "<title>Blog & Artikel Hino Terbaru | Dealer Hino Indonesia</title>";
+        echo "<title>Blog & Artikel Hino Terbaru | Sales Hino Indonesia</title>";
     }
     ?>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17738682772">
-    </script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'AW-17738682772');
-    </script>
 
     <!-- Favicon untuk semua browser modern -->
     <link rel="icon" type="image/png" sizes="512x512" href="/favicon_512.png">
@@ -143,166 +118,128 @@ if ($selectedKategori !== '') $baseUrl .= "kategori=" . urlencode($selectedKateg
     <script src="/js/script.js"></script>
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Artikel Hino Indonesia | Tips, Berita & Info Truk Hino" />
+    <meta property="og:title" content="Blog & Artikel Hino | Tips, Berita & Info Truk Hino" />
     <meta property="og:description" content="Kumpulan artikel, tips truck Hino, berita terbaru, perawatan, dan panduan memilih truk terbaik untuk bisnis Anda." />
     <meta property="og:image" content="https://saleshinoindonesia.com/images/promohino1.webp" />
     <meta property="og:url" content="https://saleshinoindonesia.com/artikel" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Dealer Hino Indonesia" />
+    <meta property="og:site_name" content="Sales Hino Indonesia" />
 
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Dealer Resmi Hino Jakarta | Harga & Promo Truk Hino Terbaru 2025" />
-    <meta name="twitter:description" content="Dealer Resmi Hino Jakarta - Jual Truk Hino Dutro, Ranger, dan Bus Hino dengan harga terbaik dan promo terbaru 2025." />
+    <meta name="twitter:title" content="Dealer Resmi Hino Tangerang | Harga & Promo Truk Hino Terbaru 2025" />
+    <meta name="twitter:description" content="Dealer Resmi Hino Tangerang - Jual Truk Hino Dutro, Ranger, dan Bus Hino dengan harga terbaik dan promo terbaru 2025." />
     <meta name="twitter:image" content="https://saleshinoindonesia.com/images/promohino1.webp" />
 
-    <!-- Schema.org JSON-LD untuk SEO Dealer Hino -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Dealer Hino Indonesia",
-      "url": "https://saleshinoindonesia.com"
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AutoDealer",
-      "@id": "https://saleshinoindonesia.com/#dealer",
-      "name": "Dealer Hino Indonesia",
-      "alternateName": "Dealer Resmi Hino Jakarta",
-      "url": "https://saleshinoindonesia.com/",
-      "image": "https://saleshinoindonesia.com/images/promohino1.webp",
-      "logo": "https://saleshinoindonesia.com/favicon_512.png",
-      "description": "Dealer Resmi Hino Jakarta Barat - Jual Truk Hino Dutro, Ranger, dan Bus Hino. Dapatkan harga terbaik, promo terbaru 2025, serta layanan kredit dan cicilan untuk seluruh Indonesia, khususnya Jabodetabek dan Jawa Barat. Hubungi Nathan Hino sekarang juga!.",
-      "telephone": "+62-859-7528-7684",
-      "priceRange": "$$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Jl. Tj. Pura.9-10, RT.2/RW.2, Pegadungan, Kec. Kalideres",
-        "addressLocality": "Jakarta Barat",
-        "addressRegion": "DKI Jakarta",
-        "postalCode": "11830",
-        "addressCountry": "ID"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -6.1567,
-        "longitude": 106.6901
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          "opens": "08:00",
-          "closes": "17:00"
-        }
-      ],
-      "sameAs": [
-        "https://www.facebook.com/profile.php?id=61573843992250",
-        "https://www.instagram.com/saleshinojabodetabek",
-        "https://www.tiktok.com/@saleshinoindonesia"
-      ]
-    }
-    </script>
-    
     <?php
-    // --- Schema Artikel Otomatis (perbaikan) ---
-    // Pastikan kita menggunakan $artikel (bukan $result)
-    $articleSchemas = [];
-    $position = 1;
-    
-    // Pastikan $canonical dan $description sudah ada sebelum ini (kamu sudah membuatnya)
+    // ===============================
+    // SCHEMA JSON-LD HALAMAN ARTIKEL
+    // ===============================
+
+    $schemaItemList = [];
+    $pos = 1;
+
     foreach ($artikel as $row) {
-        // Safety: pastikan field ada
-        $slug = $row['slug'] ?? '';
-        $judul = $row['judul'] ?? '';
-        $excerpt = isset($row['isi']) ? substr(strip_tags($row['isi']), 0, 160) : '';
-        $img = $row['gambar'] ?? '';
-        $tanggal = $row['tanggal'] ?? null; // gunakan nilai jika ada, atau null
-    
-        // Normalisasi tanggal (optional) - jika kosong, hilangkan field
-        $datePublished = $tanggal ?: null;
-        $dateModified = $tanggal ?: null;
-    
-        $schemaItem = [
-            "@type" => "BlogPosting",
-            "mainEntityOfPage" => [
+
+        if (empty($row['slug']) || empty($row['judul'])) {
+            continue;
+        }
+
+        $schemaItemList[] = [
+            "@type" => "ListItem",
+            "position" => $pos++,
+            "url" => "https://saleshinoindonesia.com/artikel/" . $row['slug'],
+            "item" => [
+                "@type" => "BlogPosting",
+                "headline" => $row['judul'],
+                "description" => substr(strip_tags($row['isi'] ?? ''), 0, 150),
+                "image" => $row['gambar'] ?? "https://saleshinoindonesia.com/favicon_512.png",
+                "author" => [
+                    "@type" => "Organization",
+                    "name" => "Sales Hino Indonesia"
+                ],
+                "publisher" => [
+                    "@type" => "Organization",
+                    "name" => "Sales Hino Indonesia",
+                    "logo" => [
+                        "@type" => "ImageObject",
+                        "url" => "https://saleshinoindonesia.com/favicon_512.png"
+                    ]
+                ],
+                "mainEntityOfPage" => [
+                    "@type" => "WebPage",
+                    "@id" => "https://saleshinoindonesia.com/artikel/" . $row['slug']
+                ],
+                "datePublished" => $row['tanggal'] ?? null,
+                "dateModified" => $row['tanggal'] ?? null
+            ]
+        ];
+    }
+
+    $schema = [
+        "@context" => "https://schema.org",
+        "@graph" => [
+
+            [
                 "@type" => "WebPage",
-                "@id" => "https://saleshinoindonesia.com/artikel/" . $slug
+                "@id" => $canonical,
+                "url" => $canonical,
+                "name" => "Blog & Artikel Hino Terbaru | Sales Hino Indonesia",
+                "description" => $description,
+                "inLanguage" => "id-ID"
             ],
-            "headline" => $judul,
-            "description" => $excerpt,
-            "image" => [
-                "@type" => "ImageObject",
-                "url" => $img
-            ],
-            "author" => [
-                "@type" => "Organization",
-                "name" => "Dealer Hino Indonesia"
-            ],
-            "publisher" => [
-                "@type" => "Organization",
-                "name" => "Dealer Hino Indonesia",
-                "logo" => [
-                    "@type" => "ImageObject",
-                    "url" => "https://saleshinoindonesia.com/favicon_512.png"
+
+            [
+                "@type" => "BreadcrumbList",
+                "itemListElement" => [
+                    [
+                        "@type" => "ListItem",
+                        "position" => 1,
+                        "name" => "Home",
+                        "item" => "https://saleshinoindonesia.com/"
+                    ],
+                    [
+                        "@type" => "ListItem",
+                        "position" => 2,
+                        "name" => "Artikel",
+                        "item" => $canonical
+                    ]
                 ]
             ],
-            "position" => $position++
-        ];
-    
-        if ($datePublished) {
-            $schemaItem["datePublished"] = $datePublished;
-        }
-        if ($dateModified) {
-            $schemaItem["dateModified"] = $dateModified;
-        }
-    
-        $articleSchemas[] = $schemaItem;
-    }
-    
-    // Susun schema Blog / ItemList
-    $blogSchema = [
-        "@context" => "https://schema.org",
-        "@type" => "Blog",
-        "name" => "Blog Truk Hino Indonesia",
-        "url" => $canonical ?? "https://saleshinoindonesia.com/artikel",
-        "description" => $description ?? "",
-        "blogPost" => $articleSchemas
+
+            [
+                "@type" => "Blog",
+                "name" => "Blog Truk Hino Indonesia",
+                "url" => $canonical,
+                "description" => $description,
+                "publisher" => [
+                    "@type" => "Organization",
+                    "name" => "Sales Hino Indonesia",
+                    "logo" => [
+                        "@type" => "ImageObject",
+                        "url" => "https://saleshinoindonesia.com/favicon_512.png"
+                    ]
+                ]
+            ],
+
+            [
+                "@type" => "ItemList",
+                "name" => "Daftar Artikel Hino",
+                "numberOfItems" => count($schemaItemList),
+                "itemListElement" => $schemaItemList
+            ]
+
+        ]
     ];
     ?>
-    
-    <script type="application/ld+json">
-    <?= json_encode($blogSchema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE); ?>
-    </script>
 
-    <!-- Event snippet for Pembelian conversion page -->
-    <script>
-    gtag('event', 'conversion', {
-        'send_to': 'AW-17738682772/7zEXCMGP3sIbEJSju4pC',
-        'transaction_id': ''
-    });
+    <script type="application/ld+json">
+    <?= json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT); ?>
     </script>
 
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7TN9DJW" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <!-- Header -->
     <header>
       <div class="container header-content navbar">

@@ -17,27 +17,12 @@ if ($slug !== '' && is_array($data)) {
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <!-- Google Tag Manager -->
-    <script>
-      (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-P7TN9DJW');
-    </script>
-    <!-- End Google Tag Manager -->
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <?php
     $meta_desc = !empty($artikel['isi'])
       ? mb_strimwidth(strip_tags($artikel['isi']), 0, 155, '...')
-      : 'Artikel terbaru seputar Truk Hino, tips, promo, dan berita resmi dari Dealer Hino Indonesia.';
+      : 'Artikel terbaru seputar Truk Hino, tips, promo, dan berita resmi dari Sales Hino Indonesia.';
     ?>
     
     <meta name="description" content="<?= htmlspecialchars($meta_desc) ?>">
@@ -47,18 +32,7 @@ if ($slug !== '' && is_array($data)) {
     />
     <meta name="author" content="Nathan Hino" />
     <link rel="canonical" href="https://saleshinoindonesia.com/artikel/<?= urlencode($artikel['slug'] ?? '') ?>">
-    <title><?= htmlspecialchars($artikel['judul'] ?? 'Artikel Tidak Ditemukan') ?> | Dealer Hino Indonesia</title>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17738682772">
-    </script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'AW-17738682772');
-    </script>
+    <title><?= htmlspecialchars($artikel['judul'] ?? 'Artikel Tidak Ditemukan') ?> | Sales Hino Indonesia</title>
 
     <!-- Favicon untuk semua browser modern -->
     <link rel="icon" type="image/png" sizes="512x512" href="/favicon_512.png">
@@ -95,7 +69,7 @@ if ($slug !== '' && is_array($data)) {
     <meta property="og:image" content="https://saleshinoindonesia.com/uploads/artikel/<?= $artikel['gambar'] ?>" />
     <meta property="og:url" content="https://saleshinoindonesia.com/artikel/<?= urlencode($artikel['slug']) ?>" />
     <meta property="og:type" content="article" />
-    <meta property="og:site_name" content="Dealer Hino Indonesia" />
+    <meta property="og:site_name" content="Sales Hino Indonesia" />
 
 
     <!-- Twitter Card -->
@@ -107,121 +81,113 @@ if ($slug !== '' && is_array($data)) {
     />
     <meta name="twitter:image" content="https://saleshinoindonesia.com/images/promohino1.webp" />
 
-    <!-- Schema.org JSON-LD untuk SEO Dealer Hino -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Dealer Hino Indonesia",
-      "url": "https://saleshinoindonesia.com"
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AutoDealer",
-      "@id": "https://saleshinoindonesia.com/#dealer",
-      "name": "Dealer Hino Indonesia",
-      "alternateName": "Dealer Resmi Hino Jakarta",
-      "url": "https://saleshinoindonesia.com/",
-      "image": "https://saleshinoindonesia.com/images/promohino1.webp",
-      "logo": "https://saleshinoindonesia.com/favicon_512.png",
-      "description": "Dealer Resmi Hino Jakarta Barat - Jual Truk Hino Dutro, Ranger, dan Bus Hino. Dapatkan harga terbaik, promo terbaru 2025, serta layanan kredit dan cicilan untuk seluruh Indonesia, khususnya Jabodetabek dan Jawa Barat. Hubungi Nathan Hino sekarang juga!.",
-      "telephone": "+62-859-7528-7684",
-      "priceRange": "$$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Jl. Tj. Pura.9-10, RT.2/RW.2, Pegadungan, Kec. Kalideres",
-        "addressLocality": "Jakarta Barat",
-        "addressRegion": "DKI Jakarta",
-        "postalCode": "11830",
-        "addressCountry": "ID"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -6.1567,
-        "longitude": 106.6901
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          "opens": "08:00",
-          "closes": "17:00"
+    <?php
+    // ===============================
+    // SCHEMA JSON-LD DETAIL ARTIKEL (FINAL & AMAN)
+    // ===============================
+
+    if (!empty($artikel)) {
+
+        $articleUrl = "https://saleshinoindonesia.com/artikel/" . urlencode($artikel['slug']);
+
+        $articleImage = !empty($artikel['gambar'])
+            ? "https://saleshinoindonesia.com/uploads/artikel/" . $artikel['gambar']
+            : "https://saleshinoindonesia.com/favicon_512.png";
+
+        // BlogPosting
+        $blogPosting = [
+            "@type" => "BlogPosting",
+            "@id" => $articleUrl . "#article",
+            "headline" => $artikel['judul'],
+            "description" => $meta_desc,
+            "image" => [
+                "@type" => "ImageObject",
+                "url" => $articleImage
+            ],
+            "author" => [
+                "@type" => "Person",
+                "name" => "Nathan Hino"
+            ],
+            "publisher" => [
+                "@type" => "Organization",
+                "name" => "Sales Hino Indonesia",
+                "logo" => [
+                    "@type" => "ImageObject",
+                    "url" => "https://saleshinoindonesia.com/favicon_512.png"
+                ]
+            ],
+            "mainEntityOfPage" => [
+                "@type" => "WebPage",
+                "@id" => $articleUrl
+            ],
+            "inLanguage" => "id-ID"
+        ];
+
+        // Optional date
+        if (!empty($artikel['tanggal'])) {
+            $blogPosting['datePublished'] = $artikel['tanggal'];
+            $blogPosting['dateModified']  = $artikel['tanggal'];
         }
-      ],
-      "sameAs": [
-        "https://www.facebook.com/profile.php?id=61573843992250",
-        "https://www.instagram.com/saleshinojabodetabek",
-        "https://www.tiktok.com/@saleshinoindonesia"
-      ]
+
+        $articleSchema = [
+            "@context" => "https://schema.org",
+            "@graph" => [
+
+                // WebPage
+                [
+                    "@type" => "WebPage",
+                    "@id" => $articleUrl,
+                    "url" => $articleUrl,
+                    "name" => $artikel['judul'],
+                    "description" => $meta_desc,
+                    "inLanguage" => "id-ID"
+                ],
+
+                // Breadcrumb
+                [
+                    "@type" => "BreadcrumbList",
+                    "itemListElement" => [
+                        [
+                            "@type" => "ListItem",
+                            "position" => 1,
+                            "name" => "Home",
+                            "item" => "https://saleshinoindonesia.com/"
+                        ],
+                        [
+                            "@type" => "ListItem",
+                            "position" => 2,
+                            "name" => "Artikel",
+                            "item" => "https://saleshinoindonesia.com/artikel/"
+                        ],
+                        [
+                            "@type" => "ListItem",
+                            "position" => 3,
+                            "name" => $artikel['judul'],
+                            "item" => $articleUrl
+                        ]
+                    ]
+                ],
+
+                // Article
+                $blogPosting
+
+            ]
+        ];
     }
-    </script>
-    
-    <!--Schema Artikel-->
-    <?php if ($artikel): ?>
+    ?>
+
+    <?php if (!empty($articleSchema)): ?>
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://saleshinoindonesia.com/artikel/<?= urlencode($artikel['slug']) ?>"
-      },
-      "headline": "<?= htmlspecialchars($artikel['judul']) ?>",
-      "description": "<?= htmlspecialchars($meta_desc) ?>",
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://saleshinoindonesia.com/uploads/artikel/<?= $artikel['gambar'] ?>"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Nathan Hino"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Dealer Hino Indonesia",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://saleshinoindonesia.com/favicon_512.png"
-        }
-      },
-      "datePublished": "<?= date('c', strtotime($artikel['tanggal'])) ?>",
-      "dateModified": "<?= date('c', strtotime($artikel['tanggal'])) ?>"
-    }
+    <?= json_encode(
+        $articleSchema,
+        JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT
+    ); ?>
     </script>
     <?php endif; ?>
-
-    <!-- Event snippet for Pembelian conversion page -->
-    <script>
-    gtag('event', 'conversion', {
-        'send_to': 'AW-17738682772/7zEXCMGP3sIbEJSju4pC',
-        'transaction_id': ''
-    });
-    </script>
 
   </head>
 
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-P7TN9DJW"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <!-- Header -->
     <header>
       <div class="container header-content navbar">
