@@ -263,7 +263,7 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
        <section class="sh-video-section">
         <div class="sh-container">
           <div class="sh-video-header">
-            <h2>Hino New Series 300 136 MDLR</h2>
+            <h2>Hino 300 New Series 136 MDLR</h2>
             <p>
               Saksikan langsung informasi produk, layanan, dan keunggulan
               kendaraan niaga Hino untuk kebutuhan bisnis Anda.
