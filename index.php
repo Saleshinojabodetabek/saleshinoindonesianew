@@ -155,28 +155,10 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
         "https://www.tiktok.com/@saleshinoindonesia"
       ]
     }
-    </script>
-
-
-    <!-- Event snippet for Pembelian conversion page -->
-    <script>
-    gtag('event', 'conversion', {
-        'send_to': 'AW-17738682772/7zEXCMGP3sIbEJSju4pC',
-        'transaction_id': ''
-    });
-    </script>
-    
+    </script>    
   </head>
 
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7TN9DJW"
-        height="0" width="0" style="display:none;visibility:hidden">
-      </iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <!-- Header -->
     <header>
       <div class="container header-content navbar">
@@ -212,8 +194,8 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
         <img src="images/Euro 4 Hino Bus.webp" class="slide" alt="Hino Bus Series" loading="lazy"/>
       </div>
       <div class="container">
-        <h1>Dealer Resmi Hino Indonesia – Harga & Promo Truk Hino Terbaru</h1>
-        <p>Kami hadir sebagai mitra terpercaya dalam menyediakan berbagai kendaraan Hino yang tangguh, mulai dari truk ringan, truk berat hingga bus. Dengan layanan profesional, stok lengkap, serta penawaran harga dan pembiayaan yang kompetitif, kami siap mendukung kebutuhan transportasi dan operasional bisnis Anda. Dapatkan solusi terbaik hanya di Dealer Resmi Hino Indonesia.</p>
+        <h1>Sales Hino No.1 Dengan Layanan Profesional & Cepat</h1>
+        <p>Profesional, cepat, dan siap memberikan solusi terbaik untuk kebutuhan truk bisnis Anda. Layanan responsif, proses mudah, dan harga kompetitif!</p>
         <div class="hero-buttons">
           <a 
               href="https://wa.me/+6285975287684?text=Halo%20Saya%20Dapat%20Nomor%20Anda%20Dari%20Google" 
@@ -233,18 +215,18 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
         <div class="container">
           <div class="about-content">
             <div class="text">
-              <h2>Dealer Hino Indonesia</h2>
-              <h3>Dealer Hino Jakarta – Resmi & Terpercaya</h3>
+              <h2>Sales Hino Indonesia</h2>
+              <h3>Sales Hino Jakarta – Resmi & Terpercaya</h3>
               <div class="divider"></div>
               <p>
-              Nathan adalah sales <strong>Dealer Hino Indonesia</strong> yang berpengalaman dan profesional, siap menjadi mitra terbaik Anda dalam memenuhi kebutuhan kendaraan niaga. Sebagai sales <strong>dealer Hino Jakarta</strong> dan area sekitarnya, Nathan menyediakan berbagai model truk dan bus Hino dengan pelayanan cepat, ramah, dan solusi pembiayaan fleksibel untuk setiap jenis usaha. Jika Anda sedang mencari <strong>dealer Hino terdekat</strong>, Nathan siap membantu dengan respons cepat dan penawaran terbaik.
+              Nathan, Sales Hino Indonesia yang berpengalaman dan profesional, siap menjadi mitra terbaik Anda dalam memenuhi kebutuhan kendaraan niaga. Dengan pemahaman mendalam tentang produk Hino serta solusi pembiayaan yang fleksibel, Nathan selalu memberikan pelayanan cepat, ramah, dan tepat sasaran untuk setiap jenis usaha.
               </p>
               <p>
-              Komitmen Nathan sebagai sales <strong>dealer resmi Hino Indonesia</strong> adalah memberikan lebih dari sekadar penjualan. Nathan hadir untuk membangun hubungan jangka panjang melalui layanan purna jual (after-sales) yang responsif, konsultasi kebutuhan armada yang akurat, serta promo dan harga terbaik. Percayakan kebutuhan truk dan bus Hino Anda kepada <strong>Nathan – Dealer Hino Jabodetabek</strong>, dan rasakan pengalaman membeli yang aman, nyaman, serta menguntungkan.
+              Komitmen Nathan adalah memberikan lebih dari sekadar penjualan. Ia hadir untuk membangun hubungan jangka panjang dengan pelanggan melalui layanan after-sales yang responsif, konsultasi kebutuhan armada yang akurat, serta penawaran harga terbaik. Percayakan kebutuhan truk Hino Anda kepada Nathan, dan rasakan pengalaman membeli yang aman, nyaman, dan menguntungkan.
               </p>
               <div class="contact-buttons">
-                <a href="https://wa.me/6285975287684" class="btn whatsapp-btn"><i class="fab fa-whatsapp"></i> +62 859-7528-7684</a>
-                <a href="mailto:saleshinojabodetabek@gmail.com" class="btn email-btn"><i class="fas fa-envelope"></i> saleshinojabodetabek@gmail.com</a>
+                <a href="https://wa.me/6285975287684" class="btn whatsapp-btn"><i class="fab fa-whatsapp"></i> Whatsapp</a>
+                <a href="mailto:saleshinojabodetabek@gmail.com" class="btn email-btn"><i class="fas fa-envelope"></i> Gmail</a>
               </div>
             </div>
             <div class="image-gallery">
@@ -275,6 +257,26 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
           </div>
         </div>
       </section>
+
+      <!-- Youtube -->
+       <section class="video-section">
+        <div class="video-container">
+          <h2 class="video-title">
+            Hino New Series 300 136 MDLR
+          </h2>
+
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/IUhKBJOcVus"
+              title="Video YouTube"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </section>
+
       
       <!-- Section: Promo Utama -->
       <section id="promo-utama" class="promo-section fade-element">

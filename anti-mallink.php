@@ -1,6 +1,6 @@
 <?php
 // ===========================================================
-// 🚫 BLOKIR LINK MALWARE - Dealer Hino Indonesia
+// 🚫 BLOKIR LINK MALWARE - Sales Hino Indonesia
 // ===========================================================
 
 $request_uri = $_SERVER['REQUEST_URI'] ?? '';
