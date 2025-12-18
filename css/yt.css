@@ -1,0 +1,78 @@
+/* ================================
+   SALES HINO - VIDEO SECTION
+================================ */
+.sh-video-section {
+  padding: 70px 20px;
+  background: #ffffff;
+}
+
+.sh-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.sh-video-header {
+  max-width: 720px;
+  margin-bottom: 35px;
+}
+
+.sh-video-header h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+/* Aksen garis merah khas Hino */
+.sh-video-header h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #c30000;
+  display: block;
+  margin-top: 10px;
+}
+
+.sh-video-header p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Video */
+.sh-video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+  background: #000;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+.sh-video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .sh-video-section {
+    padding: 50px 15px;
+  }
+
+  .sh-video-header h2 {
+    font-size: 24px;
+  }
+
+  .sh-video-header p {
+    font-size: 15px;
+  }
+}

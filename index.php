@@ -57,15 +57,16 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
     </script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/whatsapp.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/home/hero.css" />
-    <link rel="stylesheet" href="css/home/promoutama.css" />
-    <link rel="stylesheet" href="css/home/produk.css" />
-    <link rel="stylesheet" href="css/home/feature.css" />
-    <link rel="stylesheet" href="css/home/contact.css" />
-    <link rel="stylesheet" href="css/home/blog.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/whatsapp.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/yt.css" />
+    <link rel="stylesheet" href="/css/home/hero.css" />
+    <link rel="stylesheet" href="/css/home/promoutama.css" />
+    <link rel="stylesheet" href="/css/home/produk.css" />
+    <link rel="stylesheet" href="/css/home/feature.css" />
+    <link rel="stylesheet" href="/css/home/contact.css" />
+    <link rel="stylesheet" href="/css/home/blog.css" />
 
     <!-- JS -->
     <script src="js/script.js"></script>
