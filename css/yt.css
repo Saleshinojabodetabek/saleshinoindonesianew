@@ -14,7 +14,8 @@
 /* Header */
 .sh-video-header {
   max-width: 720px;
-  margin-bottom: 35px;
+  margin: 0 auto 35px auto;
+  text-align: center;
 }
 
 .sh-video-header h2 {
@@ -33,6 +34,8 @@
   background: #c30000;
   display: block;
   margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sh-video-header p {
