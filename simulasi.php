@@ -220,53 +220,65 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
 
     <!-- Simulasi Section -->
     <div class="wrapper" id="contact-form">
-      <h2>Simulasi Kredit</h2>
-      <p>Jika Anda sudah menentukan jenis dan tipe mobil yang Anda inginkan, silakan isi form berikut dengan data yang benar. Kami akan segera merespon pesan Anda dalam waktu maksimal 1 x 24 jam.</p>
+    <h2>Simulasi Kredit</h2>
+    <p>
+        Jika Anda sudah menentukan jenis dan tipe mobil yang Anda inginkan,
+        silakan isi form berikut dengan data yang benar.
+        Kami akan segera merespon pesan Anda dalam waktu maksimal 1 x 24 jam.
+    </p>
 
-      <div class="container">
+    <div class="container">
         <div class="contact-form">
-          <form id="contactForm" method="POST" action="admin/simpan_kontak.php">
-            <label for="name">Your Name:</label>
+        <form id="contactForm" method="POST" action="admin/simpan_kontak.php">
+
+            <label for="name">Nama:</label>
             <input type="text" id="name" name="name" required />
 
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="phone">Your Phone Number:</label>
+            <label for="phone">Nomor Telepon:</label>
             <input type="tel" id="phone" name="phone" required />
 
-            <label for="message">Message:</label>
+            <label for="mobil">Jenis & Tipe Mobil:</label>
+            <input type="text" id="mobil" name="mobil" required />
+
+            <label for="tenor">Tenor:</label>
+            <select id="tenor" name="tenor" required>
+            <option value="">-- Pilih Tenor --</option>
+            <option value="12">12 Bulan</option>
+            <option value="24">24 Bulan</option>
+            <option value="36">36 Bulan</option>
+            <option value="48">48 Bulan</option>
+            </select>
+
+            <label for="dp">Budget DP:</label>
+            <input
+            type="number"
+            id="dp"
+            name="dp"
+            placeholder="Contoh: 50000000"
+            min="0"
+            required
+            />
+
+            <label for="message">Pesan:</label>
             <textarea id="message" name="message" rows="6" required></textarea>
 
             <button type="submit"><strong>Submit</strong></button>
-          </form>
+        </form>
         </div>
-
-        <div class="map1">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63471.95288843176!2d106.65860738294855!3d-6.131096504333846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1d775401fa6d%3A0xc7e25a8d81b821ec!2sDealer%20Hino%20Jabodetabek%20Resmi!5e0!3m2!1sen!2sus!4v1760817261750!5m2!1sen!2sus"
-            width="600"
-            height="450"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
+    </div>
     </div>
 
     <script>
-      document.querySelector('.btn-contact').addEventListener('click', function(e) {
+    document.querySelector('.btn-contact')?.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector('#contact-form');
         if (target) {
-          target.scrollIntoView({
+        target.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
-          });
+        });
         }
-      });
+    });
     </script>
 
   <!-- WhatsApp Floating Widget -->
