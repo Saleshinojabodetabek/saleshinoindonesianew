@@ -255,7 +255,7 @@ while ($row = $res_spec->fetch_assoc()) {
               <a href="/hinobus">Hino Bus Series</a>
             </div>
           </div>
-          <a href="https://saleshinoindonesia.com/hino500">Service</a>
+          <a href="https://saleshinoindonesia.com/simulasi">Simulasi Kredit</a>
           <a href="https://saleshinoindonesia.com/contact">Contact</a>
           <a href="https://saleshinoindonesia.com/artikel">Blog & Artikel</a>
         </nav>
