@@ -60,7 +60,7 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
     <link rel="stylesheet" href="css/whatsapp.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/contact/hero.css" />
-    <link rel="stylesheet" href="css/contact/contact.css" />
+    <link rel="stylesheet" href="css/contact/simulasi.css" />
 
     <!-- JS -->
     <script src="js/script.js"></script>
@@ -219,7 +219,7 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
     </section>
 
     <!-- Simulasi Section -->
-    <div class="wrapper" id="contact-form">
+    <div class="wrapper" id="simulasi-section">
     <h2>Simulasi Kredit</h2>
     <p>
         Jika Anda sudah menentukan jenis dan tipe mobil yang Anda inginkan,
@@ -228,8 +228,8 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
     </p>
 
     <div class="container">
-        <div class="contact-form">
-        <form id="contactForm" method="POST" action="admin/simpan_kontak.php">
+        <div class="simulasi-form">
+        <form id="simulasiForm" method="POST" action="admin/simpan_kontak.php">
 
             <label for="name">Nama:</label>
             <input type="text" id="name" name="name" required />
@@ -254,7 +254,7 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
             type="number"
             id="dp"
             name="dp"
-            placeholder="Contoh: 50000000"
+            placeholder="Rp."
             min="0"
             required
             />
@@ -269,9 +269,9 @@ ob_start('convertImgToWebp'); // aktifkan output buffering
     </div>
 
     <script>
-    document.querySelector('.btn-contact')?.addEventListener('click', function (e) {
+    document.querySelector('.btn-simulasi')?.addEventListener('click', function (e) {
         e.preventDefault();
-        const target = document.querySelector('#contact-form');
+        const target = document.querySelector('#simulasi-section');
         if (target) {
         target.scrollIntoView({
             behavior: 'smooth',
